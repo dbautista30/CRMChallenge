@@ -8,7 +8,7 @@ ActiveAdmin.register Customer do
   #
   permit_params :full_name, :phone_number, :email_address, :notes, :image
 
-  forms do |f|
+  form do |f|
     f.semantic_errors
     f.inputs
 

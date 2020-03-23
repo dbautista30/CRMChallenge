@@ -1,0 +1,9 @@
+<h1>Missing email</h1>
+
+<p>
+  <%= link_to "Home", root_path %> |
+  <%= link_to "Alphabetized", customers_alphabetized_path %> |
+  <%= link_to "Missing Email", customers_missing_email_path %>
+</p>
+
+<%= render partial: 'customer', object: @customers, locals: {show_link: false} %>
